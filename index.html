@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Hanbin Jang</title>
+  <style>
+    body { font-family: sans-serif; margin: 40px; }
+    .tab { cursor: pointer; padding: 10px 20px; display: inline-block; background: #eee; margin-right: 5px; }
+    .tab.active { background: #2c3e50; color: white; }
+    .content { display: none; margin-top: 20px; }
+    .content.active { display: block; }
+  </style>
+</head>
+<body>
+  <h1>Hanbin Jang</h1>
+  <div id="tabs">
+    <div class="tab active" onclick="showContent('edu')">학력</div>
+    <div class="tab" onclick="showContent('research')">연구 경험</div>
+    <div class="tab" onclick="showContent('projects')">프로젝트</div>
+  </div>
+
+  <div id="edu" class="content active">
+    <h2>학력</h2>
+    <ul><li>서울대학교 전기정보공학부 (재학 중)</li></ul>
+  </div>
+
+  <div id="research" class="content">
+    <h2>연구 경험</h2>
+    <ul>
+      <li>Quadruped Locomotion Control</li>
+      <li>Friction-Aware Adaptive Control</li>
+    </ul>
+  </div>
+
+  <div id="projects" class="content">
+    <h2>프로젝트</h2>
+    <video width="400" controls>
+      <source src="assets/videos/demo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <script>
+    function showContent(id) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+      document.querySelector(`.tab[onclick="showContent('${id}')"]`).classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
