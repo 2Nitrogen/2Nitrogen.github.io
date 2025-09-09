@@ -1,6 +1,12 @@
 remote_theme: mmistakes/minimal-mistakes
-plugins:
-  - jekyll-include-cache
-
 title: "Hanbin Jang"
-description: "Robotics · Locomotion · Control · Data-driven Methods"
+
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Academic History"
+    url: /education/
+  - title: "Research"
+    url: /research/
+  - title: "Projects"
+    url: /projects/
