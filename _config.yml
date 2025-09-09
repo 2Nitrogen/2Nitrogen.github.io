@@ -1,0 +1,6 @@
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+
+title: "Hanbin Jang"
+description: "Robotics · Locomotion · Control · Data-driven Methods"
