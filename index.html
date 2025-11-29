@@ -41,6 +41,9 @@
       margin: 0 auto;     /* 화면 중앙 정렬 */
       padding: 0 20px;    /* 양 옆 여백 */
     }
+    .top-section {
+      text-align: center;
+    }
     
     .edu-item {
       display: flex;
@@ -72,46 +75,34 @@
 
 <body>
   <div class="container">
-    <h1>Hanbin Jang</h1>
-    <p>Robotics · Control · Locomotion · Data-driven Methods</p>
-  
-    <!-- Photos -->
-    <div id="photos">
-      <img src="assets/images/front1.jpg" alt="Main Photo 1" height="200">
-      <img src="assets/images/front4.jpg" alt="Main Photo 2" height="200">
-      <img src="assets/images/front2.jpg" alt="Main Photo 3" height="200">
-      <img src="assets/images/front3.jpg" alt="Main Photo 4" height="200">
-    </div>
-  
-    <br>
-  
-        <a href="assets/Hanbin_s_CV.pdf" download
-         style="
-           display:inline-block;
-           padding:10px 16px;
-           background:#0073e6;
-           color:white;
-           border-radius:8px;
-           text-decoration:none;
-           font-weight:600;
-         "
-      >
-        📄 Download CV (PDF)
-      </a>
-      <a href="https://www.linkedin.com/in/hanbin-jang-071a62367/" target="_blank"
-       style="
-         display:inline-block;
-         padding:10px 16px;
-         background:#0073e6;
-         color:white;
-         border-radius:8px;
-         text-decoration:none;
-         font-weight:600;
-       "
-      >
-        🔗 View LinkedIn Profile
-      </a>
-      <a href="https://github.com/2Nitrogen" target="_blank"
+    <div class="top-section">
+      <h1>Hanbin Jang</h1>
+      <p>Robotics · Control · Locomotion · Data-driven Methods</p>
+    
+      <!-- Photos -->
+      <div id="photos">
+        <img src="assets/images/front1.jpg" alt="Main Photo 1" height="200">
+        <img src="assets/images/front4.jpg" alt="Main Photo 2" height="200">
+        <img src="assets/images/front2.jpg" alt="Main Photo 3" height="200">
+        <img src="assets/images/front3.jpg" alt="Main Photo 4" height="200">
+      </div>
+    
+      <br>
+    
+          <a href="assets/Hanbin_s_CV.pdf" download
+           style="
+             display:inline-block;
+             padding:10px 16px;
+             background:#0073e6;
+             color:white;
+             border-radius:8px;
+             text-decoration:none;
+             font-weight:600;
+           "
+        >
+          📄 Download CV (PDF)
+        </a>
+        <a href="https://www.linkedin.com/in/hanbin-jang-071a62367/" target="_blank"
          style="
            display:inline-block;
            padding:10px 16px;
@@ -122,17 +113,31 @@
            font-weight:600;
          "
         >
-        🐙 View GitHub Profile
-      </a>
-  
-    <br><br>
-  
-    <!-- Tab buttons -->
-    <div id="tabs">
-      <div class="tab active" onclick="showContent('edu')">Overview</div>
-      <div class="tab" onclick="showContent('personal')">Personal Story</div>
-      <div class="tab" onclick="showContent('research')">Research</div>
-      <div class="tab" onclick="showContent('projects')">Activities</div>
+          🔗 View LinkedIn Profile
+        </a>
+        <a href="https://github.com/2Nitrogen" target="_blank"
+           style="
+             display:inline-block;
+             padding:10px 16px;
+             background:#0073e6;
+             color:white;
+             border-radius:8px;
+             text-decoration:none;
+             font-weight:600;
+           "
+          >
+          🐙 View GitHub Profile
+        </a>
+    
+      <br><br>
+    
+      <!-- Tab buttons -->
+      <div id="tabs">
+        <div class="tab active" onclick="showContent('edu')">Overview</div>
+        <div class="tab" onclick="showContent('personal')">Personal Story</div>
+        <div class="tab" onclick="showContent('research')">Research</div>
+        <div class="tab" onclick="showContent('projects')">Activities</div>
+      </div>
     </div>
   
     <!-- Academic/Education-->
@@ -307,35 +312,33 @@
           <img src="assets/images/vortical_structure.png" alt="CFD" height="315">
         </div>
       </div>
-      <ul>
-        
-        <li>
-          Automated Referee System Modules for Racket Sports; Mechatronics Contest (Dec. 2024), Awarded 3rd Prize, SNU <br>
-          <div style="overflow-x: auto; white-space: nowrap;">
-            <img src="assets/images/referee_system.png" alt="system overview" height="315">
-            <img src="assets/images/validation1.jpg" alt="stage1" height="315">
-            <img src="assets/images/validation2.jpg" alt="stage2" height="315">
-            <img src="assets/images/module.jpg" alt="camera module" height="315">
-          </div>
-        </li>
-  
-        <br>
-  
-        <li>
-          Zero-velocity-Update Point Classification; Project for coursework "Fundamentals of Deep-Learning", SNU <br>
-          <div style="overflow-x: auto; white-space: nowrap;">
-            <img src="assets/images/zupt_1.PNG" alt="zupt1" height="315">
-            <img src="assets/images/zupt_2.PNG" alt="zupt2" height="315">
-            <img src="assets/images/zupt_3.PNG" alt="zupt3" height="315">
-            <img src="assets/images/zupt_4.PNG" alt="zupt4" height="315">
-          </div>
-        </li>
-  
-        <br>
-        
-        <li>
-          Mini autonomous car design project; Scholarship & Training Program for Future Automobile Designers, SNU
-          <div style="margin-top:10px;">
+      
+      <div class="card">
+        <h3> Automated Referee System Modules for Racket Sports </h3>
+        <p> Awarded 3rd Prize at Mechatronics Contest (Dec. 2024), SNU </p><br>
+        <div style="overflow-x: auto; white-space: nowrap;">
+          <img src="assets/images/referee_system.png" alt="system overview" height="315">
+          <img src="assets/images/validation1.jpg" alt="stage1" height="315">
+          <img src="assets/images/validation2.jpg" alt="stage2" height="315">
+          <img src="assets/images/module.jpg" alt="camera module" height="315">
+        </div>
+      </div>
+      
+      <div class="card">
+        <h3> Zero-velocity-Update Point Classification </h3>
+        <p> Project for coursework "Fundamentals of Deep-Learning", SNU </p><br>
+        <div style="overflow-x: auto; white-space: nowrap;">
+          <img src="assets/images/zupt_1.PNG" alt="zupt1" height="315">
+          <img src="assets/images/zupt_2.PNG" alt="zupt2" height="315">
+          <img src="assets/images/zupt_3.PNG" alt="zupt3" height="315">
+          <img src="assets/images/zupt_4.PNG" alt="zupt4" height="315">
+        </div>
+      </div>
+
+      <div class="card">
+        <h3> Mini autonomous car design project </h3>
+        <p> Scholarship & Training Program for Future Automobile Designers, SNU </p><br>
+        <div style="margin-top:10px;">
             <iframe width="560" height="315" 
               src="https://www.youtube.com/embed/pIahcChmJt4"
               frameborder="0" allowfullscreen>
@@ -345,13 +348,12 @@
               frameborder="0" allowfullscreen>
             </iframe>
           </div>
-        </li>
-  
-        <br>
-        
-        <li>
-          ROBOCON 2019; Project for coursework "Creative Engineering Design", SNU
-          <div style="overflow-x: auto; white-space: nowrap;">
+      </div>
+
+      <div class="card">
+        <h3> ROBOCON 2019 </h3>
+        <p> Project for coursework "Creative Engineering Design", SNU </p><br>
+        <div style="overflow-x: auto; white-space: nowrap;">
             <div style="margin-top:10px;">
               <iframe width="560" height="315" 
                 src="https://www.youtube.com/embed/gHstn_PsuqM" 
@@ -363,9 +365,8 @@
               <img src="assets/images/CED_3.jpg" alt="ced_3" height="315">
             </div>
           </div>
-        </li>
-  
-      </ul>
+      </div>
+
       <br>
   
       <h2>Publications</h2>
