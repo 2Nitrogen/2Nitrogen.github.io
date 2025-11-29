@@ -36,7 +36,11 @@
     .content.active {
       display: block;
     }
-
+    .container {
+      max-width: 1000px;   /* 원하는 폭 — 800~1100px 추천 */
+      margin: 0 auto;     /* 화면 중앙 정렬 */
+      padding: 0 20px;    /* 양 옆 여백 */
+    }
     
     .edu-item {
       display: flex;
@@ -67,46 +71,34 @@
 
 
 <body>
-  <h1>Hanbin Jang</h1>
-  <p>Robotics · Control · Locomotion · Data-driven Methods</p>
-
-  <!-- Photos -->
-  <div id="photos">
-    <img src="assets/images/front1.jpg" alt="Main Photo 1" height="200">
-    <img src="assets/images/front4.jpg" alt="Main Photo 2" height="200">
-    <img src="assets/images/front2.jpg" alt="Main Photo 3" height="200">
-    <img src="assets/images/front3.jpg" alt="Main Photo 4" height="200">
-  </div>
-
-  <br>
-
-      <a href="assets/Hanbin_s_CV.pdf" download
-       style="
-         display:inline-block;
-         padding:10px 16px;
-         background:#0073e6;
-         color:white;
-         border-radius:8px;
-         text-decoration:none;
-         font-weight:600;
-       "
-    >
-      📄 Download CV (PDF)
-    </a>
-    <a href="https://www.linkedin.com/in/hanbin-jang-071a62367/" target="_blank"
-     style="
-       display:inline-block;
-       padding:10px 16px;
-       background:#0073e6;
-       color:white;
-       border-radius:8px;
-       text-decoration:none;
-       font-weight:600;
-     "
-    >
-      🔗 View LinkedIn Profile
-    </a>
-    <a href="https://github.com/2Nitrogen" target="_blank"
+  <div class="container">
+    <h1>Hanbin Jang</h1>
+    <p>Robotics · Control · Locomotion · Data-driven Methods</p>
+  
+    <!-- Photos -->
+    <div id="photos">
+      <img src="assets/images/front1.jpg" alt="Main Photo 1" height="200">
+      <img src="assets/images/front4.jpg" alt="Main Photo 2" height="200">
+      <img src="assets/images/front2.jpg" alt="Main Photo 3" height="200">
+      <img src="assets/images/front3.jpg" alt="Main Photo 4" height="200">
+    </div>
+  
+    <br>
+  
+        <a href="assets/Hanbin_s_CV.pdf" download
+         style="
+           display:inline-block;
+           padding:10px 16px;
+           background:#0073e6;
+           color:white;
+           border-radius:8px;
+           text-decoration:none;
+           font-weight:600;
+         "
+      >
+        📄 Download CV (PDF)
+      </a>
+      <a href="https://www.linkedin.com/in/hanbin-jang-071a62367/" target="_blank"
        style="
          display:inline-block;
          padding:10px 16px;
@@ -117,260 +109,275 @@
          font-weight:600;
        "
       >
-      🐙 View GitHub Profile
-    </a>
-
-  <br><br>
-
-  <!-- Tab buttons -->
-  <div id="tabs">
-    <div class="tab active" onclick="showContent('edu')">Overview</div>
-    <div class="tab" onclick="showContent('personal')">Personal Story</div>
-    <div class="tab" onclick="showContent('research')">Research</div>
-    <div class="tab" onclick="showContent('projects')">Activities</div>
-  </div>
-
-  <!-- Academic/Education-->
-  <div id="edu" class="content active">
-    <h2>Education</h2>
-    <div class="edu">
-      <div class="edu-item">
-        <img src="assets/images/snu_logo.png" alt="SNU Logo">
-        <div>
-          <strong>B.S., Mechanical Engineering (Major)</strong><br>
-          Seoul National University (Mar 2019 ~ Feb 2026)<br>
-          <strong>B.S., Electrical & Computer Engineering (Minor)</strong><br>
-          Seoul National University (Mar 2024 ~ Feb 2026)
+        🔗 View LinkedIn Profile
+      </a>
+      <a href="https://github.com/2Nitrogen" target="_blank"
+         style="
+           display:inline-block;
+           padding:10px 16px;
+           background:#0073e6;
+           color:white;
+           border-radius:8px;
+           text-decoration:none;
+           font-weight:600;
+         "
+        >
+        🐙 View GitHub Profile
+      </a>
+  
+    <br><br>
+  
+    <!-- Tab buttons -->
+    <div id="tabs">
+      <div class="tab active" onclick="showContent('edu')">Overview</div>
+      <div class="tab" onclick="showContent('personal')">Personal Story</div>
+      <div class="tab" onclick="showContent('research')">Research</div>
+      <div class="tab" onclick="showContent('projects')">Activities</div>
+    </div>
+  
+    <!-- Academic/Education-->
+    <div id="edu" class="content active">
+      <h2>Education</h2>
+      <div class="edu">
+        <div class="edu-item">
+          <img src="assets/images/snu_logo.png" alt="SNU Logo">
+          <div>
+            <strong>B.S., Mechanical Engineering (Major)</strong><br>
+            Seoul National University (Mar 2019 ~ Feb 2026)<br>
+            <strong>B.S., Electrical & Computer Engineering (Minor)</strong><br>
+            Seoul National University (Mar 2024 ~ Feb 2026)
+          </div>
+        </div>
+      
+        <div class="edu-item">
+          <img src="assets/images/ncsu_logo.png" alt="NCSU Logo">
+          <div>
+            <strong>Exchange Student, Mechanical & Aerospace Engineering</strong><br>
+            North Carolina State University (Jan 2025 ~ Aug 2025)
+          </div>
+        </div>
+      </div>
+  
+      <br>
+  
+      <h2>Employment</h2>
+      <div class="edu">
+        <div class="edu-item">
+          <img src="assets/images/sequor_robotics_logo.jpg" alt="SNU Logo">
+          <div>
+            <strong>Full-time Internship</strong><br>
+            Sequor Robotics, South Korea (Dec 2025 ~ Now)<br>
+          </div>
         </div>
       </div>
     
-      <div class="edu-item">
-        <img src="assets/images/ncsu_logo.png" alt="NCSU Logo">
-        <div>
-          <strong>Exchange Student, Mechanical & Aerospace Engineering</strong><br>
-          North Carolina State University (Jan 2025 ~ Aug 2025)
+      <br>
+  
+      <h2>Research Interests</h2>
+      <div class="interests">
+        <div class="card">
+          <h3>Robotic Systems & Control</h3>
+          <p>Legged Robots, Whole-body Control and Wearable Robots</p>
         </div>
-      </div>
-    </div>
-
-    <br>
-
-    <h2>Employment</h2>
-    <div class="edu">
-      <div class="edu-item">
-        <img src="assets/images/sequor_robotics_logo.jpg" alt="SNU Logo">
-        <div>
-          <strong>Full-time Internship</strong><br>
-          Sequor Robotics, South Korea (Dec 2025 ~ Now)<br>
+        <div class="card">
+          <h3>Data-driven Approaches</h3>
+          <p>Deep Neural-Networks and Deep Reinforcement Learning</p>
+        </div>
+        <div class="card">
+          <h3>Adaptive Control</h3>
+          <p>Adaptive Locomotion of Legged Robot Systems over Changing Terrains</p>
+          <p>Intelligent Wearable Robotic Systems Aware of User Intentions</p>
+        </div>
+        <div class="card">
+          <h3>System Identification</h3>
+          <p>How to recognize Dynamic Properties of Systems</p>
+          <p>How to mitigate Sim-to-Real Gap Problems for Successful Employment of Robots to Real-world</p>
         </div>
       </div>
     </div>
   
-    <br>
-
-    <h2>Research Interests</h2>
-    <div class="interests">
-      <div class="card">
-        <h3>Robotic Systems & Control</h3>
-        <p>Legged Robots, Whole-body Control and Wearable Robots</p>
-      </div>
-      <div class="card">
-        <h3>Data-driven Approaches</h3>
-        <p>Deep Neural-Networks and Deep Reinforcement Learning</p>
-      </div>
-      <div class="card">
-        <h3>Adaptive Control</h3>
-        <p>Adaptive Locomotion of Legged Robot Systems over Changing Terrains</p>
-        <p>Intelligent Wearable Robotic Systems Aware of User Intentions</p>
-      </div>
-      <div class="card">
-        <h3>System Identification</h3>
-        <p>How to recognize Dynamic Properties of Systems</p>
-        <p>How to mitigate Sim-to-Real Gap Problems for Successful Employment of Robots to Real-world</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Personal Story -->
-  <div id="personal" class="content">
-    
-    <br>
-    
-    <div>
-      Hello, My name is Hanbin Ethan Jang from South Korea. Through several years of involvement in engineering field, I'm dreaming of becoming a skilled robotics engineer!
-    </div>
-
-    <br>
-    
-    <h2>Hobbies</h2>
-    <div>
-      I think having hobbies is important for enjoying life and managing stress! They help me recover, stay focused, and keep going. I like things that engage my senses, including sports and recording a normal day with my camera :-)
-    </div>
-    <div style="overflow-x: auto; white-space: nowrap;">
-      <img src="assets/images/Hob_1.jpg" alt="system overview" height="315">
-      <img src="assets/images/Hob_2.jpg" alt="system overview" height="315">
-      <img src="assets/images/Hob_3.jpg" alt="system overview" height="315">
-      <img src="assets/images/Hob_4.jpg" alt="system overview" height="315">
-      <img src="assets/images/Hob_5.jpg" alt="system overview" height="315">
-      <img src="assets/images/Hob_6.jpg" alt="system overview" height="315">
-      <img src="assets/images/Hob_7.jpg" alt="system overview" height="315">
-    </div>
-
-    <br>
-    
-    <h2>Volunteer</h2>
-    <div>
-      I spend time volunteering because I enjoy the sense of contributing to the world and the rewarding moments it brings. Growing up with my lovely Maltese, Cloud, I developed empathy for minorities such as abandoned animals. That is why I participated in Kkori (Tail), a campus animal-welfare volunteer club at Seoul National University, from 2022 to 2024. We provided weekly care—cleaning, feeding, and enrichment activities—for rescued dogs and cats at Angel’s Nest in Goyang, South Korea. We also held an open market for fundraising by selling our handmade goods. I served as the team leader responsible for designing and producing fundraising items such as postcards, T-shirts, and eco-bags, and we donated all profits to the animal shelter.
-      I am also interested in contributing to learning communities by providing students with opportunities to experience and grow. Some of my seniors voluntarily organized an educational group called P.I. (Progress for Ideal) to enrich the learning environment our juniors would face, as the high school we graduated from was marginalized in terms of educational resources. I joined because I resonated with their values. We designed a research-based summer camp program called Consilience, where students could define their own problems, develop novel and previously unseen solutions through interdisciplinary perspectives, and present their ideas in written form. After several years of watching students and our learning community grow, I find contributing to educational communities and learning alongside others deeply meaningful.
-    </div>
-    <div style="overflow-x: auto; white-space: nowrap;">
-      <img src="assets/images/Vol_1.jpg" alt="system overview" height="315">
-      <img src="assets/images/Vol_2.jpg" alt="system overview" height="315">
-      <img src="assets/images/Vol_3.jpg" alt="system overview" height="315">
-    </div>
-    
-  </div>
-
-  <!-- Research -->
-  <div id="research" class="content">
-    <h2>Research Experience</h2>
-    <div class="card">
-      <h3>Adaptive Quadrupedal Locomotion Control</h3>
-      <p>: Hybrid control methods integrating model-based and data-driven approaches to implement effective and efficient locomotion over multiple terrains</p>
+    <!-- Personal Story -->
+    <div id="personal" class="content">
       
       <br>
-      <img src="assets/images/OUR_Summer_Symposium_Poster.jpg" alt="Research Photo 1" height="800">
-      <br>
-      <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/5kcKtRRA-oA"
-        frameborder="0" allowfullscreen>
-      </iframe>
-    </div>
-
-    <div class="card">
-      <h3>Self-paced Treadmill Algorithm</h3>
-      <p>: </p>
       
-      <br>
-      <br>
-    </div>
-    
-    <div class="card">
-      <h3>Hip-flexion Soft Exo-suit Design</h3>
-      <p>: Design of a Hip-flexion Exo-suit to assist the gait of patients</p>
-
+      <div>
+        Hello, My name is Hanbin Ethan Jang from South Korea. Through several years of involvement in engineering field, I'm dreaming of becoming a skilled robotics engineer!
+      </div>
+  
       <br>
       
+      <h2>Hobbies</h2>
+      <div>
+        I think having hobbies is important for enjoying life and managing stress! They help me recover, stay focused, and keep going. I like things that engage my senses, including sports and recording a normal day with my camera :-)
+      </div>
       <div style="overflow-x: auto; white-space: nowrap;">
-        <img src="assets/images/Hip_flexion_suit_2.png" alt="Research Photo 2-1" height="500" style="margin-right: 10px;">
-        <img src="assets/images/Hip_flexion_suit.png" alt="Research Photo 2-2" height="500">
+        <img src="assets/images/Hob_1.jpg" alt="system overview" height="315">
+        <img src="assets/images/Hob_2.jpg" alt="system overview" height="315">
+        <img src="assets/images/Hob_3.jpg" alt="system overview" height="315">
+        <img src="assets/images/Hob_4.jpg" alt="system overview" height="315">
+        <img src="assets/images/Hob_5.jpg" alt="system overview" height="315">
+        <img src="assets/images/Hob_6.jpg" alt="system overview" height="315">
+        <img src="assets/images/Hob_7.jpg" alt="system overview" height="315">
       </div>
-    </div>
-
-    <div class="card">
-      <h3>Haptic Interface for Teleoperation of Robotic Manipulator</h3>
-      <p>: Design haptic module (pneumativ fingerpad) and actuation module that enable users to feel the weight of gripped objects</p>
-      <p>: Reinforce the design of pneumatic gripper for fabric using revolute joints and bridge structures to resolve the deflection issue by the weight of each leg</p>
-      
+  
       <br>
-
+      
+      <h2>Volunteer</h2>
+      <div>
+        I spend time volunteering because I enjoy the sense of contributing to the world and the rewarding moments it brings. Growing up with my lovely Maltese, Cloud, I developed empathy for minorities such as abandoned animals. That is why I participated in Kkori (Tail), a campus animal-welfare volunteer club at Seoul National University, from 2022 to 2024. We provided weekly care—cleaning, feeding, and enrichment activities—for rescued dogs and cats at Angel’s Nest in Goyang, South Korea. We also held an open market for fundraising by selling our handmade goods. I served as the team leader responsible for designing and producing fundraising items such as postcards, T-shirts, and eco-bags, and we donated all profits to the animal shelter.
+        
+        I am also interested in contributing to learning communities by providing students with opportunities to experience and grow. Some of my seniors voluntarily organized an educational group called P.I. (Progress for Ideal) to enrich the learning environment our juniors would face, as the high school we graduated from was marginalized in terms of educational resources. I joined because I resonated with their values. We designed a research-based summer camp program called Consilience, where students could define their own problems, develop novel and previously unseen solutions through interdisciplinary perspectives, and present their ideas in written form. After several years of watching students and our learning community grow, I find contributing to educational communities and learning alongside others deeply meaningful.
+      </div>
       <div style="overflow-x: auto; white-space: nowrap;">
-        <img src="assets/images/Active_valve-1.jpg" alt="Research Photo 4-1" height="350">
-        <img src="assets/gifs/Active_valve-2.gif" alt="Research Photo 4-2" height="350">
-        <img src="assets/images/Fingerpad.jpg" alt="Research Photo 4-3" height="350">
-        <img src="assets/images/Fingerpad-2.jpg" alt="Research Photo 4-4" height="350">
-        <img src="assets/images/Gripper-1.jpg" alt="Research Photo 4-5" height="350">
-        <img src="assets/images/Gripper-2.jpg" alt="Research Photo 4-6" height="350">
-        <img src="assets/images/Gripper-3.jpg" alt="Research Photo 4-7" height="350">
-        <img src="assets/images/Gripper-4.jpg" alt="Research Photo 4-8" height="350">
+        <img src="assets/images/Vol_1.jpg" alt="system overview" height="315">
+        <img src="assets/images/Vol_2.jpg" alt="system overview" height="315">
+        <img src="assets/images/Vol_3.jpg" alt="system overview" height="315">
+      </div>
+      
+    </div>
+  
+    <!-- Research -->
+    <div id="research" class="content">
+      <h2>Research Experience</h2>
+      <div class="card">
+        <h3>Adaptive Quadrupedal Locomotion Control</h3>
+        <p>: Hybrid control methods integrating model-based and data-driven approaches to implement effective and efficient locomotion over multiple terrains</p>
+        
+        <br>
+        <img src="assets/images/OUR_Summer_Symposium_Poster.jpg" alt="Research Photo 1" height="800">
+        <br>
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/5kcKtRRA-oA"
+          frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+  
+      <div class="card">
+        <h3>Self-paced Treadmill Algorithm</h3>
+        <p>: </p>
+        
+        <br>
+        <br>
+      </div>
+      
+      <div class="card">
+        <h3>Hip-flexion Soft Exo-suit Design</h3>
+        <p>: Design of a Hip-flexion Exo-suit to assist the gait of patients</p>
+  
+        <br>
+        
+        <div style="overflow-x: auto; white-space: nowrap;">
+          <img src="assets/images/Hip_flexion_suit_2.png" alt="Research Photo 2-1" height="500" style="margin-right: 10px;">
+          <img src="assets/images/Hip_flexion_suit.png" alt="Research Photo 2-2" height="500">
+        </div>
+      </div>
+  
+      <div class="card">
+        <h3>Haptic Interface for Teleoperation of Robotic Manipulator</h3>
+        <p>: Design haptic module (pneumativ fingerpad) and actuation module that enable users to feel the weight of gripped objects</p>
+        <p>: Reinforce the design of pneumatic gripper for fabric using revolute joints and bridge structures to resolve the deflection issue by the weight of each leg</p>
+        
+        <br>
+  
+        <div style="overflow-x: auto; white-space: nowrap;">
+          <img src="assets/images/Active_valve-1.jpg" alt="Research Photo 4-1" height="350">
+          <img src="assets/gifs/Active_valve-2.gif" alt="Research Photo 4-2" height="350">
+          <img src="assets/images/Fingerpad.jpg" alt="Research Photo 4-3" height="350">
+          <img src="assets/images/Fingerpad-2.jpg" alt="Research Photo 4-4" height="350">
+          <img src="assets/images/Gripper-1.jpg" alt="Research Photo 4-5" height="350">
+          <img src="assets/images/Gripper-2.jpg" alt="Research Photo 4-6" height="350">
+          <img src="assets/images/Gripper-3.jpg" alt="Research Photo 4-7" height="350">
+          <img src="assets/images/Gripper-4.jpg" alt="Research Photo 4-8" height="350">
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- Projects & Publications -->
-  <div id="projects" class="content">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        B.S. Graduation Thesis - "A study on how stroke plane angle difference affect the hovering of damselfly"; Awarded Outstanding B.S. Thesis Presentation Award (Dec. 2024), SNU <br>
-        <img src="assets/gifs/MOVIE.gif" alt="Wing movement" height="315">
-        <img src="assets/images/vortical_structure.png" alt="CFD" height="315">
-      </li>
-
-      <br>
-      
-      <li>
-        Automated Referee System Modules for Racket Sports; Mechatronics Contest (Dec. 2024), Awarded 3rd Prize, SNU <br>
-        <div style="overflow-x: auto; white-space: nowrap;">
-          <img src="assets/images/referee_system.png" alt="system overview" height="315">
-          <img src="assets/images/validation1.jpg" alt="stage1" height="315">
-          <img src="assets/images/validation2.jpg" alt="stage2" height="315">
-          <img src="assets/images/module.jpg" alt="camera module" height="315">
-        </div>
-      </li>
-
-      <br>
-
-      <li>
-        Zero-velocity-Update Point Classification; Project for coursework "Fundamentals of Deep-Learning", SNU <br>
-        <div style="overflow-x: auto; white-space: nowrap;">
-          <img src="assets/images/zupt_1.PNG" alt="zupt1" height="315">
-          <img src="assets/images/zupt_2.PNG" alt="zupt2" height="315">
-          <img src="assets/images/zupt_3.PNG" alt="zupt3" height="315">
-          <img src="assets/images/zupt_4.PNG" alt="zupt4" height="315">
-        </div>
-      </li>
-
-      <br>
-      
-      <li>
-        Mini autonomous car design project; Scholarship & Training Program for Future Automobile Designers, SNU
-        <div style="margin-top:10px;">
-          <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/pIahcChmJt4"
-            frameborder="0" allowfullscreen>
-          </iframe>
-          <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/a405EWtqSR8"
-            frameborder="0" allowfullscreen>
-          </iframe>
-        </div>
-      </li>
-
-      <br>
-      
-      <li>
-        ROBOCON 2019; Project for coursework "Creative Engineering Design", SNU
-        <div style="overflow-x: auto; white-space: nowrap;">
+  
+    <!-- Projects & Publications -->
+    <div id="projects" class="content">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          B.S. Graduation Thesis - "A study on how stroke plane angle difference affect the hovering of damselfly"; Awarded Outstanding B.S. Thesis Presentation Award (Dec. 2024), SNU <br>
+          <img src="assets/gifs/MOVIE.gif" alt="Wing movement" height="315">
+          <img src="assets/images/vortical_structure.png" alt="CFD" height="315">
+        </li>
+  
+        <br>
+        
+        <li>
+          Automated Referee System Modules for Racket Sports; Mechatronics Contest (Dec. 2024), Awarded 3rd Prize, SNU <br>
+          <div style="overflow-x: auto; white-space: nowrap;">
+            <img src="assets/images/referee_system.png" alt="system overview" height="315">
+            <img src="assets/images/validation1.jpg" alt="stage1" height="315">
+            <img src="assets/images/validation2.jpg" alt="stage2" height="315">
+            <img src="assets/images/module.jpg" alt="camera module" height="315">
+          </div>
+        </li>
+  
+        <br>
+  
+        <li>
+          Zero-velocity-Update Point Classification; Project for coursework "Fundamentals of Deep-Learning", SNU <br>
+          <div style="overflow-x: auto; white-space: nowrap;">
+            <img src="assets/images/zupt_1.PNG" alt="zupt1" height="315">
+            <img src="assets/images/zupt_2.PNG" alt="zupt2" height="315">
+            <img src="assets/images/zupt_3.PNG" alt="zupt3" height="315">
+            <img src="assets/images/zupt_4.PNG" alt="zupt4" height="315">
+          </div>
+        </li>
+  
+        <br>
+        
+        <li>
+          Mini autonomous car design project; Scholarship & Training Program for Future Automobile Designers, SNU
           <div style="margin-top:10px;">
             <iframe width="560" height="315" 
-              src="https://www.youtube.com/embed/gHstn_PsuqM" 
+              src="https://www.youtube.com/embed/pIahcChmJt4"
               frameborder="0" allowfullscreen>
             </iframe>
-            <img src="assets/images/CED_0.jpg" alt="ced_0" height="315">
-            <img src="assets/images/CED_1.jpg" alt="ced_1" height="315">
-            <img src="assets/images/CED_2.jpg" alt="ced_2" height="315">
-            <img src="assets/images/CED_3.jpg" alt="ced_3" height="315">
+            <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/a405EWtqSR8"
+              frameborder="0" allowfullscreen>
+            </iframe>
           </div>
-        </div>
-      </li>
-
-    </ul>
-    <br>
-
-    <h2>Publications</h2>
-    <ul>
-      <li>“Data-driven Whole-Body Locomotion Control: Adaptive Quadrupedal Locomotion over Multiple Terrains” (in progress)</li>
-    </ul>
+        </li>
+  
+        <br>
+        
+        <li>
+          ROBOCON 2019; Project for coursework "Creative Engineering Design", SNU
+          <div style="overflow-x: auto; white-space: nowrap;">
+            <div style="margin-top:10px;">
+              <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/gHstn_PsuqM" 
+                frameborder="0" allowfullscreen>
+              </iframe>
+              <img src="assets/images/CED_0.jpg" alt="ced_0" height="315">
+              <img src="assets/images/CED_1.jpg" alt="ced_1" height="315">
+              <img src="assets/images/CED_2.jpg" alt="ced_2" height="315">
+              <img src="assets/images/CED_3.jpg" alt="ced_3" height="315">
+            </div>
+          </div>
+        </li>
+  
+      </ul>
+      <br>
+  
+      <h2>Publications</h2>
+      <ul>
+        <li>“Data-driven Whole-Body Locomotion Control: Adaptive Quadrupedal Locomotion over Multiple Terrains” (in progress)</li>
+      </ul>
+    </div>
+  
+    <script>
+      function showContent(id) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+        document.querySelector(`.tab[onclick="showContent('${id}')"]`).classList.add('active');
+        document.getElementById(id).classList.add('active');
+      }
+    </script>
   </div>
-
-  <script>
-    function showContent(id) {
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
-      document.querySelector(`.tab[onclick="showContent('${id}')"]`).classList.add('active');
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
 </body>
 </html>
